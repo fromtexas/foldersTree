@@ -1,0 +1,62 @@
+ul.folder {
+	list-style: none;
+}
+
+.folder li{
+	margin-bottom: 10px;
+	position:  relative;
+}
+
+
+
+.folder {
+	cursor: pointer;
+}
+
+.item {
+	font-weight: 600;
+}
+
+.item:before {
+	content: '';
+	position: absolute;
+	height: 22px;
+	width: 20px;
+	background-color: rgb(241, 241, 171);
+	left: -25px;
+}
+
+.item:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 10px;
+    background-color: rgb(241, 241, 171);
+    left: -25px;
+    z-index: 10;
+    top: -3px;
+}
+
+.file:before {
+	content: '';
+	position: absolute;
+	height: 22px;
+	width: 20px;
+	background-color: #dee1ea;
+	left: -25px;
+}
+
+.fileCorner {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 0 0 11px;
+  border-color: white transparent transparent #920035;
+  position: absolute;
+  top: 0px;
+  left: -16px;
+}
+
+.hidden {
+	display: none;
+}
